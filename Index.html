@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pocetna</title>
+        <link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+        <link rel="stylesheet/less" type="text/css" href="less/resp.less" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.12.2/less.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script>
+                $(document).ready(function () {
+                    $(".hamburger").click(function () {
+                        $(".nav").slideToggle(400);
+                        event.stopPropagation();
+                    })
+                    $(window).resize(function () {
+                        if($(".hamburger").css("display") == "none")
+                        {
+                            $(".nav").css("display","block");
+                        }
+                    })
+                })
+        </script>
+</head>
+<body>
+        <div class="header">
+                <div class="logo">
+                        <img src="images/logo.jpg" alt="logo">
+                </div>
+                <div class="hamburger">
+                        <button class="hamburger">&#9776;</button>
+                </div>         
+                <div class="nav">     
+                        <ul>
+                            <li><a href="Index.html" class="active">Pocetna</a></li>
+                            <li><a href="O nama.html">O nama</a></li>
+                            <li><a href="Kontakt.html">Kontakt</a></li>
+                        </ul>
+                </div>
+        </div>
+        
+
+                <div class="proizvodi">
+                        <div class="proizvod">
+                                <img src="images/proizvod1.png" alt="proizvod1">
+                                <h3>Slušalice HyperX Cloud Alpha</h3>
+                                <div class="opis">
+                                        <ul>
+                                                <li>Težina sa mikrofonom: 336 g </li>
+                                                <li>Dužina kabla: 1.3m + 2m zvučna karta</li>
+                                                <li>Frekvencijski odziv: 13Hz– 27kHz</li>
+                                                <li>Impedansa: 65Ω</li>
+                                                <li>Osetljivost : 99dB</li>
+                                        </ul>
+                                        <form action="">
+                                                <p>Kolicina: <input type="number" name="kolicina"></p>
+                                                <p>Cena:14.999 RSD</p>
+                                                <input type="submit" value="Dodaj u korpu">
+                                        </form>
+                                </div>
+                        </div>    
+                        <div class="proizvod">
+                                <img src="images/proizvod2.png" alt="proizvod2">
+                                <h3>Slušalice Logitech G733 Black</h3>
+                                <div class="opis">
+                                        <ul>
+                                                <li>Prečnik zvučnika: 40mm"</li>
+                                                <li>Frekventni odziv: 20Hz - 20kHz</li>
+                                                <li>Osetljivost: 87.5 dB</li>
+                                                <li>Impedansa: 39 Ω</li>
+                                                <li>Mikrofon: Da</li>
+                                        </ul>
+                                        <form action="">
+                                                <p>Kolicina: <input type="number" name="kolicina"></p>
+                                                <p>Cena:22,499 RSD</p>
+                                                <input type="submit" value="Dodaj u korpu">
+                                        </form>
+                                </div>
+                        </div>
+                        <div class="proizvod">
+                                <img src="images/proizvod3.png" alt="proizvod3">
+                                <h3>Slušalice Logitech PRO X</h3>
+                                <div class="opis">
+                                        <ul>
+                                                <li>Prečnik zvučnika: 50mm</li>
+                                                <li>Tip magneta: Neodimijum</li>
+                                                <li>Frekventni odziv: 20Hz - 20kHz</li>
+                                                <li>Osetljivost: 92dB</li>
+                                                <li>Impedansa: 35 Ω</li>
+                                        </ul>
+                                        <form action="">
+                                                <p>Kolicina: <input type="number" name="kolicina"></p>
+                                                <p>Cena:19,500 RSD</p>
+                                                <input type="submit" value="Dodaj u korpu">
+                                        </form>
+                                </div>
+                        </div>
+                        <div class="proizvod">
+                                <img src="images/proizvod4.png" alt="proizvod4">
+                                <h3>Slušalice HyperX Cloud Stinger Wireless PS4, PS4 PRO</h3>
+                                <div class="opis">
+                                        <ul>
+                                                <li>Težina sa mikrofonom: 270g "</li>
+                                                <li>Frekventni odziv: 20Hz– 20kHz</li>
+                                                <li>Impedansa: 32Ω</li>
+                                                <li>Osetljivost : 109dB</li>
+                                                <li>Frekventni odziv: 100–7,000Hz</li>
+                                        </ul>
+                                        <form action="">
+                                                <p>Kolicina: <input type="number" name="kolicina"></p>
+                                                <p>Cena:10,999 RSD</p>
+                                                <input type="submit" value="Dodaj u korpu">
+                                        </form>
+                                </div>
+                        </div>
+                </div>
+                
+                <div class="registracija">
+                        <form action="" method="post">
+                                <h3>Registracija korisnika</h3>
+                                <div class="regLevo">
+                                        <p><input type="text" name="username" placeholder="Username"></p>
+                                        <p><input type="email" name="email" placeholder="Email"></p>
+                                        <p><input type="password" name="password" placeholder="Password"></p>
+                                        <p><input type="text" name="adresa" placeholder="Adresa"></p>     
+                                </div> 
+                                <div class="regSredina">
+                                        <p><input type="text" name="ime" placeholder="Ime"></p>    
+                                        <p><input type="text" name="prezime" placeholder="Prezime"></p> 
+                                        <p><input type="number" name="godine" placeholder="Godine"></p>
+                                        <p><input type="tel" name="telefon" placeholder="Broj telefona"></p>
+                                </div> 
+                                <div class="regDesno">
+                                        <p>Pol</p>
+                                        <p><input type="radio" name="pol" value="male">Muski</p>
+                                        <p><input type="radio" name="pol" value="female">Zenski</p>
+                                </div> 
+                                        <p><input type="submit" value="Posalji"></p>              
+                        </form>
+                </div>
+        </div>
+
+        <div class="footer">
+                <ul>
+                        <li>Milan Gajovic s36/19</li>
+                        <li>mgajovic3619s@raf.rs</li>
+                </ul>
+        </div>
+</body>

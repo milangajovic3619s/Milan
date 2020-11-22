@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+        
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>O nama</title>
+        <link rel="stylesheet/less" type="text/css" href="less/styles.less" />
+        <link rel="stylesheet/less" type="text/css" href="less/resp.less" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.12.2/less.min.js" ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+</head>
+<body>
+        <div class="header">
+                <div class="logo">
+                        <img src="images/logo.jpg" alt="logo">
+                </div>
+                <div class="hamburger">
+                        <button class="hamburger">&#9776;</button>
+                </div>         
+                <div class="nav">     
+                        <ul>
+                            <li><a href="Index.html">Pocetna</a></li>
+                            <li><a href="O nama.html" class="active">O nama</a></li>
+                            <li><a href="Kontakt.html">Kontakt</a></li>
+                        </ul>
+                </div>
+        </div>
+        <div class="centralniDeo">
+                <div class="onamaInfo">
+                        <h4>Uz Online web shop jednostavno u svako doba dana kroz samo nekoliko klikova možete 
+                                doći do željenog proizvoda!
+                        </h4>
+                        
+                </div>
+                <div class="galerija">
+                                <div class="row">
+                                                <d iv class="column">
+                                                  <img src="images/proizvod1.png" style="width:50%" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                                                </div>
+                                                <div class="column">
+                                                  <img src="images/proizvod2.png" style="width:50%" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                                                </div>
+                                                <div class="column">
+                                                  <img src="images/proizvod3.png" style="width:50%" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                                                </div>
+                                                <div class="column">
+                                                  <img src="images/proizvod4.png" style="width:50%" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                                                </div>
+                                              </div>
+                                              
+                                              
+                </div>
+        </div>
+        <div class="footer">
+                <ul>
+                        <li>Milan Gajovic S36/19</li>                   
+                        <li>mgajovic3619s@raf.rs</li>
+                        <li>+381*********</li>
+                </ul>
+        </div>
+        <script>
+                        function openModal() {
+                          document.getElementById("myModal").style.display = "block";
+                        }
+                        
+                        function closeModal() {
+                          document.getElementById("myModal").style.display = "none";
+                        }
+                        
+                        var slideIndex = 1;
+                        showSlides(slideIndex);
+                        
+                        function plusSlides(n) {
+                          showSlides(slideIndex += n);
+                        }
+                        
+                        function currentSlide(n) {
+                          showSlides(slideIndex = n);
+                        }
+                        
+                        function showSlides(n) {
+                          var i;
+                          var slides = document.getElementsByClassName("mySlides");
+                          var dots = document.getElementsByClassName("demo");
+                          var captionText = document.getElementById("caption");
+                          if (n > slides.length) {slideIndex = 1}
+                          if (n < 1) {slideIndex = slides.length}
+                          for (i = 0; i < slides.length; i++) {
+                              slides[i].style.display = "none";
+                          }
+                          for (i = 0; i < dots.length; i++) {
+                              dots[i].className = dots[i].className.replace(" active", "");
+                          }
+                          slides[slideIndex-1].style.display = "block";
+                          dots[slideIndex-1].className += " active";
+                          captionText.innerHTML = dots[slideIndex-1].alt;
+                        }
+        </script>
+        <script>
+                        $(document).ready(function () {
+                            $(".hamburger").click(function () {
+                                $(".nav").slideToggle(400);
+                                event.stopPropagation();
+                            })
+                            $(window).resize(function () {
+                                if($(".hamburger").css("display") == "none")
+                                {
+                                    $(".nav").css("display","block");
+                                }
+                            })
+                        })
+        </script>
+</body>
