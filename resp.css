@@ -1,0 +1,102 @@
+.hamburger {
+  width: 50px;
+  height: 50px;
+  background-color: #c3373f;
+  display: none;
+  z-index: 10000;
+}
+@media only screen and (max-width: 800px) {
+  .kontaktMain {
+    margin: 0;
+    text-align: center;
+  }
+  .header img {
+    display: none;
+  }
+  .nav {
+    display: none;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  .nav ul {
+    display: block;
+  }
+  .nav ul li {
+    display: block;
+  }
+  .hamburger {
+    display: inline-block;
+    float: right;
+  }
+  .proizvod {
+    margin-top: 30px;
+    width: 40%;
+  }
+  .proizvod ul {
+    padding: 0;
+  }
+  .centralniDeo {
+    min-height: 500px;
+  }
+  .kontaktForma {
+    margin-top: 0;
+  }
+  .tekstVesti {
+    padding: 0;
+  }
+  .tekstVesti p {
+    padding: 0 40px 0 20px;
+  }
+  .mapa {
+    width: 80%;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .mapa {
+    width: 80%;
+  }
+  .kontaktMain {
+    margin: 0;
+    text-align: center;
+  }
+  .kontaktForma {
+    margin: 0;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .vesti {
+    text-align: center;
+  }
+  .tekstVesti {
+    padding: 0;
+  }
+  .tekstVesti p {
+    margin-bottom: 20px;
+    position: unset;
+    text-align: justify;
+  }
+  .proizvodi {
+    text-align: center;
+  }
+  .proizvod {
+    width: 80%;
+  }
+  .proizvod ul {
+    padding-left: 30px;
+  }
+  .proizvod ul li {
+    font-size: 15px;
+  }
+  .kontaktForma {
+    width: 60%;
+  }
+  .kontaktForma input {
+    width: 100%;
+  }
+  .kontaktForma textarea {
+    width: 100%;
+  }
+  .registracija {
+    text-align: center;
+  }
+}

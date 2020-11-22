@@ -1,0 +1,276 @@
+body {
+  margin: 0 auto;
+}
+.header {
+  display: block;
+  width: 100%;
+  height: 60px;
+}
+.header img {
+  float: left;
+  width: 6%;
+  height: 60px;
+}
+.nav {
+  float: right;
+  width: 94%;
+}
+.nav ul {
+  background-color: #c3373f;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.nav ul li {
+  display: inline-block;
+  font-size: 20px;
+  margin: 0;
+  text-align: left;
+}
+.nav ul li a {
+  color: #fff;
+  display: block;
+  padding: 20px;
+  text-decoration: none;
+}
+.nav ul li:hover {
+  background-color: #972b2b;
+}
+a.active {
+  background-color: #972b2b;
+}
+.centralniDeo {
+  margin: 30px 40px;
+  min-height: 367px;
+}
+.vest {
+  display: block;
+}
+.vest h3 {
+  margin-top: 0;
+  padding-top: 10px;
+}
+.tekstVesti {
+  display: inline-block;
+  padding-left: 20px;
+}
+.tekstVesti img {
+  height: 150px;
+  width: 150px;
+  display: inline-block;
+}
+.tekstVesti img p {
+  display: inline-block;
+  margin: 0;
+  position: absolute;
+  padding-left: 15px;
+  padding-right: 20px;
+  font-size: 17px;
+}
+.proizvod {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.proizvod ul {
+  list-style-type: none;
+}
+.proizvod ul li {
+  display: block;
+  font-size: 14px;
+  text-align: left;
+  width: fit-content;
+}
+.proizvod:hover {
+  background-color: #eeeeee;
+}
+.registracija {
+  height: auto;
+  width: 80%;
+}
+.registracija input {
+  border: 1px solid #ccc;
+}
+.regLevo {
+  display: inline-block;
+  width: 200px;
+}
+.regSredina {
+  display: inline-block;
+  width: 200px;
+}
+.regDesno {
+  display: inline-block;
+  width: 200px;
+}
+.regDesno p {
+  font-size: 15px;
+  margin: 10px;
+}
+.footer {
+  background-color: #c3373f;
+  color: #fff;
+  height: 170px;
+}
+.footer ul {
+  margin: 0;
+  padding: 20px 0 0 20px;
+}
+.footer ul li {
+  display: block;
+  font-size: 20px;
+  margin: 8px;
+}
+.mapa {
+  width: 50%;
+  display: inline-block;
+}
+.kontaktForma {
+  display: inline-block;
+  margin-left: 30px;
+  vertical-align: top;
+}
+.kontaktForma input {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  padding: 12px;
+  width: 400px;
+}
+.kontaktForma input:hover {
+  background-color: #eeeeee;
+}
+.kontaktForma textarea {
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-family: arial;
+  height: 100px;
+  margin-bottom: 12px;
+  margin-top: 6px;
+  padding: 12px;
+  width: 400px;
+}
+.kontaktForma h3 {
+  margin: 0;
+}
+.galerija {
+  margin-top: 70px;
+}
+.row > .column {
+  padding: 0 8px;
+}
+.row:after {
+  clear: both;
+  display: table;
+}
+.column {
+  display: inline-block;
+  width: 20%;
+}
+.modal {
+  background-color: black;
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  padding-top: 100px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+.modal-content {
+  background-color: black;
+  height: 212px;
+  margin: auto;
+  max-width: 1200px;
+  padding: 0;
+  position: relative;
+  width: 160px;
+}
+.close {
+  color: #fff;
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  right: 25px;
+  top: 10px;
+}
+.close:hover {
+  color: #999;
+  cursor: pointer;
+  text-decoration: none;
+}
+.close:focus {
+  color: #999;
+  cursor: pointer;
+  text-decoration: none;
+}
+.mySlides {
+  display: none;
+}
+.prev {
+  -webkit-user-select: none;
+  border-radius: 0 3px 3px 0;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -50px;
+  padding: 16px;
+  position: absolute;
+  top: 50%;
+  transition: 0.6s ease;
+  user-select: none;
+  width: auto;
+}
+.prev:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.next {
+  -webkit-user-select: none;
+  border-radius: 0 3px 3px 0;
+  border-radius: 3px 0 0 3px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: -50px;
+  padding: 16px;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transition: 0.6s ease;
+  user-select: none;
+  width: auto;
+}
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.numbertext {
+  color: #fff;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.caption-container {
+  background-color: black;
+  color: #fff;
+  padding: 2px 16px;
+  text-align: center;
+}
+img.demo {
+  opacity: 0.6;
+}
+.active {
+  opacity: 1;
+}
+.demo:hover {
+  opacity: 1;
+}
+img.hover-shadow {
+  transition: 0.3s;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
